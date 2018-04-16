@@ -1,10 +1,11 @@
 <mat-list class="pizza-rounded-border pizza-20down">
   <mat-list-item 
-    *ngFor="let order of activeOrders"
+    *ngFor="let order of orders"
     (click)="routeTo(order)"> 
     <h4 mat-line>
       <span class="pizza-good">${{calcTotal(order)}}</span> 
-      <span>- {{order.address}}</span>
+      <span *ngIf="type == 'active'">- {{order.address}}</span>
+      <span *ngIf="type == 'past'">- {{getPizzaList(order)}}</span>
     </h4>
     <h4>
       <mat-icon>keyboard_arrow_right</mat-icon>

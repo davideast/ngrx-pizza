@@ -1,10 +1,10 @@
 import { Routes, RouterModule } from '@angular/router';
-import { PizzaListComponent } from './pizza-list/pizza-list.component';
-import { PizzaDetailComponent } from './pizza-detail/pizza-detail.component';
+import { PizzaDashboardComponent } from './pizza-dashboard/pizza-dashboard.component';
+import { PizzaOrderComponent } from './pizza-order/pizza-order.component';
 
 const ROUTES: Routes = [
-  { path: '', component: PizzaListComponent },
-  { path: 'pizza/:id', component: PizzaDetailComponent },
+  { path: '', component: PizzaDashboardComponent },
+  { path: 'pizza/:id', component: PizzaOrderComponent },
 ];
 
 export const AppRoutes = RouterModule.forRoot(ROUTES);

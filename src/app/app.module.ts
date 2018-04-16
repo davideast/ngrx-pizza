@@ -13,7 +13,8 @@ import { AppRoutes } from './app.routes';
 import { AppComponent } from './app.component';
 import { PizzaListComponent } from './pizza-list/pizza-list.component';
 import { PizzaDetailComponent } from './pizza-detail/pizza-detail.component';
-import { PizzaGridComponent } from './pizza-grid/pizza-grid.component';
+import { PizzaDashboardComponent } from './pizza-dashboard/pizza-dashboard.component';
+import { PizzaOrderComponent } from './pizza-order/pizza-order.component';
 
 const MaterialModules = [
   BrowserAnimationsModule,
@@ -30,7 +31,8 @@ const MaterialModules = [
     AppComponent,
     PizzaListComponent,
     PizzaDetailComponent,
-    PizzaGridComponent
+    PizzaDashboardComponent,
+    PizzaOrderComponent
   ],
   imports: [
     BrowserModule,

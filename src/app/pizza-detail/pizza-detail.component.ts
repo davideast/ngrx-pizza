@@ -1,15 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Order } from '../models';
 
 @Component({
-  selector: 'app-pizza-detail',
+  selector: 'pizza-detail',
   templateUrl: './pizza-detail.component.html',
   styleUrls: ['./pizza-detail.component.css']
 })
-export class PizzaDetailComponent implements OnInit {
+export class PizzaDetailComponent {
 
-  constructor() { }
+  @Input() order: Order;
 
-  ngOnInit() {
+  calcTotal(order: Order) {
+    return order.pizzas
+      .map(p => p.price)
+      .reduce((acc, curr) => acc + curr);
+  }
+
+  complete(order: Order) {
+
   }
 
 }
