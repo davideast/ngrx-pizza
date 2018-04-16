@@ -5,7 +5,9 @@ import {
   MatListModule, 
   MatButtonModule, 
   MatGridListModule, 
-  MatToolbarModule } from '@angular/material';
+  MatToolbarModule,
+  MatIconModule,
+  MatCardModule } from '@angular/material';
 import { AppRoutes } from './app.routes';
 
 import { AppComponent } from './app.component';
@@ -19,6 +21,8 @@ const MaterialModules = [
   MatButtonModule,
   MatGridListModule,
   MatToolbarModule,
+  MatIconModule,
+  MatCardModule,
 ];
 
 @NgModule({
