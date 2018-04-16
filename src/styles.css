@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+  margin: 0;
+}
+
+.pizza-container {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+}
+
+.pizza-rounded-border {
+  border: 1px solid #eee;
+  border-radius: 6px;
+}
+
+.pizza-20down {
+  margin-top: 20px;
+}
+
+.pizza-subcontainer {
+  width: 680px;
+  margin: 0 auto;
+}
