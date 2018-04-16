@@ -15,6 +15,12 @@ export class PizzaDetailComponent {
       .map(p => p.price)
       .reduce((acc, curr) => acc + curr);
   }
+  
+  getPizzaList(order: Order) {
+    return order.pizzas
+      .map(p => p.name)
+      .reduce((acc, curr) => `${acc}, ${curr}`);
+  }
 
   complete(order: Order) {
 

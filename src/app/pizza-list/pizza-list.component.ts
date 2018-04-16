@@ -29,7 +29,6 @@ export class PizzaListComponent implements OnInit {
   }
 
   routeTo(order: Order) {
-    debugger;
     this.router.navigateByUrl(`pizza/${order.id}`);
   }
 

@@ -1,7 +1,14 @@
 <mat-card class="pizza-card pizza-20down">
   <mat-card-header>
-    <mat-card-title><h4>Deliver to: 1111 Main St</h4></mat-card-title>
-    <mat-card-subtitle>$9.99</mat-card-subtitle>
+    <mat-card-title>
+      <h4>Deliver to: {{ order.address }}</h4>
+    </mat-card-title>
+    <mat-card-subtitle>
+      Bring: {{getPizzaList(order)}}
+    </mat-card-subtitle>
+    <mat-card-subtitle>
+      Collect: <span class="pizza-good">${{calcTotal(order)}}</span>
+    </mat-card-subtitle>
     <mat-card-subtitle>
       <p>
         Special Instructions:
